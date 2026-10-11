@@ -1,0 +1,13 @@
+{
+  "name": "shivam-furniture-site",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node build/build.js",
+    "build:fixture": "node build/build.js --fixture",
+    "test": "node --test \"tests/*.test.js\"",
+    "serve": "npx --yes serve dist -l 4173"
+  },
+  "dependencies": { "@supabase/supabase-js": "2.45.4" }
+}

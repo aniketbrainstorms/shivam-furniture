@@ -1,0 +1,42 @@
+{
+  "supabaseUrl": "https://fixture.supabase.co",
+  "settings": {
+    "id": 1,
+    "phone": "917002023649",
+    "phone_display": "+91 70020 23649",
+    "address": "Ganesh Turning, Narakasur Path, opposite Bharat Petrol Pump, Kahilipara, Guwahati, Assam 781019",
+    "locality": "Guwahati",
+    "region": "Assam",
+    "postal_code": "781019",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Shivam+Furniture+Guwahati",
+    "gbp_url": null,
+    "hours": null,
+    "opening_hours": [],
+    "delivery_text": null,
+    "warranty_text": "[fixture] Warranty text.",
+    "years_text": null,
+    "workshop_photos": []
+  },
+  "categories": [
+    { "id": "c1", "name": "Beds", "slug": "beds", "cover_path": null, "sort_order": 1 },
+    { "id": "c2", "name": "Sofas", "slug": "sofas", "cover_path": null, "sort_order": 2 },
+    { "id": "c3", "name": "Study", "slug": "study", "cover_path": null, "sort_order": 3 },
+    { "id": "c4", "name": "Dining", "slug": "dining", "cover_path": null, "sort_order": 4 }
+  ],
+  "products": [
+    { "id": "p1", "name": "Oak Queen Bed", "slug": "oak-queen-bed", "category_id": "c1", "rooms": ["bedroom"], "material": "Oak", "size_label": "Queen", "availability": "in_showroom", "ready_days": null, "customisable": true, "dimensions": "L 210 × W 160 × H 90 cm", "finishes": [{ "name": "Natural oak", "hex": "#C7AD8D" }, { "name": "Walnut", "hex": "#4B3020" }], "good_to_know": "[fixture] Ships flat-packed.", "status": "published", "featured": true, "sort_order": 1 },
+    { "id": "p2", "name": "Tea & Coffee Table", "slug": "tea-and-coffee-table", "category_id": "c2", "rooms": ["living"], "material": "Sheesham", "size_label": null, "availability": "ready_in_days", "ready_days": 10, "customisable": false, "dimensions": null, "finishes": [], "good_to_know": null, "status": "published", "featured": false, "sort_order": 2 },
+    { "id": "p3", "name": "Plain Study Desk", "slug": "plain-study-desk", "category_id": "c3", "rooms": ["study", "kids"], "material": "Engineered wood", "size_label": "4 ft", "availability": "made_to_order", "ready_days": null, "customisable": true, "dimensions": null, "finishes": [], "good_to_know": null, "status": "published", "featured": false, "sort_order": 3 },
+    { "id": "p4", "name": "Draft Sofa", "slug": "draft-sofa", "category_id": "c2", "rooms": ["living"], "material": "", "size_label": null, "availability": null, "ready_days": null, "customisable": false, "dimensions": null, "finishes": [], "good_to_know": null, "status": "draft", "featured": false, "sort_order": 4 },
+    { "id": "p5", "name": "Retired Table", "slug": "retired-table", "category_id": "c1", "rooms": ["dining"], "material": "Teak", "size_label": null, "availability": "made_to_order", "ready_days": null, "customisable": false, "dimensions": null, "finishes": [], "good_to_know": null, "status": "unpublished", "featured": false, "sort_order": 5 }
+  ],
+  "images": [
+    { "id": "i2", "product_id": "p1", "path": "products/p1/two", "alt": "Oak Queen Bed styled in a room", "is_styled": true, "sort_order": 1 },
+    { "id": "i1", "product_id": "p1", "path": "products/p1/one", "alt": "Oak Queen Bed front view", "is_styled": false, "sort_order": 0 },
+    { "id": "i3", "product_id": "p2", "path": "products/p2/one", "alt": "Tea & Coffee Table", "is_styled": false, "sort_order": 0 }
+  ],
+  "reviews": [
+    { "id": "r1", "name": "[fixture] Reviewer", "body": "[fixture] Review text.", "source": "google", "visible": true, "sort_order": 1 }
+  ],
+  "gallery": []
+}
