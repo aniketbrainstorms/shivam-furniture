@@ -1,6 +1,6 @@
 import { db, publicUrl } from './db.js';
 import { h, toast, field } from './ui.js';
-import { uniqueSlug } from '/shared/slug.js';
+import { uniqueSlug } from '../shared/slug.js';
 import { uploadPair, removePair } from './image.js';
 
 const ROOMS = [['bedroom', 'Bedroom'], ['living', 'Living room'], ['dining', 'Dining'], ['study', 'Study / office'], ['kids', 'Kids’ room']];

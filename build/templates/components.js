@@ -1,5 +1,5 @@
 import { html, raw } from '../lib/html.js';
-import { imgUrl } from '../lib/images.js';
+import { imgUrl, isLocal } from '../lib/images.js';
 import { waLink, telLink, msgProduct, msgGeneral } from '../../shared/messages.js';
 
 export const ROOMS = { bedroom: 'Bedroom', living: 'Living room', dining: 'Dining', study: 'Study / office', kids: 'Kids’ room' };
@@ -17,8 +17,10 @@ export const waSvg = () => html`<svg class="wa-svg" viewBox="0 0 24 24" width="2
 export const placeholder = () => html`<div class="placeholder" role="img" aria-label="Photo coming soon"><span>Photo coming soon</span></div>`;
 
 export function picture(ctx, image, { sizes = '100vw', eager = false } = {}) {
+  const loading = raw(eager ? 'fetchpriority="high"' : 'loading="lazy"');
+  if (isLocal(image.path)) return html`<img src="${imgUrl('', image.path, 800)}" alt="${image.alt ?? ''}" decoding="async" ${loading}>`;
   const base = (n) => imgUrl(ctx.supabaseUrl, image.path, n);
-  return html`<img src="${base(800)}" srcset="${base(800)} 800w, ${base(1600)} 1600w" sizes="${sizes}" alt="${image.alt ?? ''}" decoding="async" ${raw(eager ? 'fetchpriority="high"' : 'loading="lazy"')}>`;
+  return html`<img src="${base(800)}" srcset="${base(800)} 800w, ${base(1600)} 1600w" sizes="${sizes}" alt="${image.alt ?? ''}" decoding="async" ${loading}>`;
 }
 
 export function card(ctx, p) {

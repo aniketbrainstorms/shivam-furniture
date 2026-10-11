@@ -1,0 +1,397 @@
+{
+  "supabaseUrl": "",
+  "settings": {
+    "id": 1,
+    "phone": "917002023649",
+    "phone_display": "+91 70020 23649",
+    "address": "Ganesh Turning, Narakasur Path, opposite Bharat Petrol Pump, Kahilipara, Guwahati, Assam 781019",
+    "locality": "Guwahati",
+    "region": "Assam",
+    "postal_code": "781019",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Shivam+Furniture+Ganesh+Turning+Narakasur+Path+Kahilipara+Guwahati+Assam+781019",
+    "gbp_url": null,
+    "hours": null,
+    "opening_hours": [],
+    "delivery_text": null,
+    "warranty_text": null,
+    "years_text": null,
+    "workshop_photos": []
+  },
+  "categories": [
+    {
+      "id": "c-beds",
+      "name": "Beds",
+      "slug": "beds",
+      "cover_path": "img/placeholders/bed-1.svg",
+      "sort_order": 1
+    },
+    {
+      "id": "c-sofas",
+      "name": "Sofas",
+      "slug": "sofas",
+      "cover_path": "img/placeholders/sofa-1.svg",
+      "sort_order": 2
+    },
+    {
+      "id": "c-dining",
+      "name": "Dining",
+      "slug": "dining",
+      "cover_path": "img/placeholders/dining-set-1.svg",
+      "sort_order": 3
+    },
+    {
+      "id": "c-storage",
+      "name": "Storage",
+      "slug": "storage",
+      "cover_path": "img/placeholders/wardrobe-1.svg",
+      "sort_order": 4
+    },
+    {
+      "id": "c-study",
+      "name": "Study",
+      "slug": "study",
+      "cover_path": "img/placeholders/study-table-1.svg",
+      "sort_order": 5
+    }
+  ],
+  "products": [
+    {
+      "id": "p-wooden-bed",
+      "name": "Wooden Bed",
+      "slug": "wooden-bed",
+      "category_id": "c-beds",
+      "rooms": [
+        "bedroom"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "made_to_order",
+      "ready_days": null,
+      "customisable": true,
+      "dimensions": null,
+      "finishes": [
+        {
+          "name": "Natural",
+          "hex": "#C7AD8D"
+        },
+        {
+          "name": "Walnut",
+          "hex": "#725039"
+        }
+      ],
+      "good_to_know": null,
+      "status": "published",
+      "featured": true,
+      "sort_order": 1
+    },
+    {
+      "id": "p-bedside-table",
+      "name": "Bedside Table",
+      "slug": "bedside-table",
+      "category_id": "c-beds",
+      "rooms": [
+        "bedroom"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "ready_in_days",
+      "ready_days": 14,
+      "customisable": false,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": false,
+      "sort_order": 2
+    },
+    {
+      "id": "p-contemporary-sofa",
+      "name": "Contemporary Sofa",
+      "slug": "contemporary-sofa",
+      "category_id": "c-sofas",
+      "rooms": [
+        "living"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "in_showroom",
+      "ready_days": null,
+      "customisable": false,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": true,
+      "sort_order": 3
+    },
+    {
+      "id": "p-lounge-chair",
+      "name": "Lounge Chair",
+      "slug": "lounge-chair",
+      "category_id": "c-sofas",
+      "rooms": [
+        "living"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "in_showroom",
+      "ready_days": null,
+      "customisable": false,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": false,
+      "sort_order": 4
+    },
+    {
+      "id": "p-dining-table-set",
+      "name": "Dining Table Set",
+      "slug": "dining-table-set",
+      "category_id": "c-dining",
+      "rooms": [
+        "dining"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "made_to_order",
+      "ready_days": null,
+      "customisable": true,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": true,
+      "sort_order": 5
+    },
+    {
+      "id": "p-dining-chair",
+      "name": "Dining Chair",
+      "slug": "dining-chair",
+      "category_id": "c-dining",
+      "rooms": [
+        "dining"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "in_showroom",
+      "ready_days": null,
+      "customisable": false,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": false,
+      "sort_order": 6
+    },
+    {
+      "id": "p-wardrobe",
+      "name": "Wardrobe",
+      "slug": "wardrobe",
+      "category_id": "c-storage",
+      "rooms": [
+        "bedroom"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "made_to_order",
+      "ready_days": null,
+      "customisable": true,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": true,
+      "sort_order": 7
+    },
+    {
+      "id": "p-bookshelf",
+      "name": "Bookshelf",
+      "slug": "bookshelf",
+      "category_id": "c-storage",
+      "rooms": [
+        "living",
+        "study"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "made_to_order",
+      "ready_days": null,
+      "customisable": true,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": false,
+      "sort_order": 8
+    },
+    {
+      "id": "p-study-table",
+      "name": "Study Table",
+      "slug": "study-table",
+      "category_id": "c-study",
+      "rooms": [
+        "study"
+      ],
+      "material": "Wood",
+      "size_label": null,
+      "availability": "made_to_order",
+      "ready_days": null,
+      "customisable": true,
+      "dimensions": null,
+      "finishes": [],
+      "good_to_know": null,
+      "status": "published",
+      "featured": true,
+      "sort_order": 9
+    }
+  ],
+  "images": [
+    {
+      "id": "i-p-wooden-bed-1",
+      "product_id": "p-wooden-bed",
+      "path": "img/placeholders/bed-1.svg",
+      "alt": "Wooden Bed (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-wooden-bed-2",
+      "product_id": "p-wooden-bed",
+      "path": "img/placeholders/bed-2.svg",
+      "alt": "Wooden Bed (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-bedside-table-1",
+      "product_id": "p-bedside-table",
+      "path": "img/placeholders/bedside-1.svg",
+      "alt": "Bedside Table (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-bedside-table-2",
+      "product_id": "p-bedside-table",
+      "path": "img/placeholders/bedside-2.svg",
+      "alt": "Bedside Table (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-contemporary-sofa-1",
+      "product_id": "p-contemporary-sofa",
+      "path": "img/placeholders/sofa-1.svg",
+      "alt": "Contemporary Sofa (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-contemporary-sofa-2",
+      "product_id": "p-contemporary-sofa",
+      "path": "img/placeholders/sofa-2.svg",
+      "alt": "Contemporary Sofa (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-lounge-chair-1",
+      "product_id": "p-lounge-chair",
+      "path": "img/placeholders/lounge-1.svg",
+      "alt": "Lounge Chair (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-lounge-chair-2",
+      "product_id": "p-lounge-chair",
+      "path": "img/placeholders/lounge-2.svg",
+      "alt": "Lounge Chair (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-dining-table-set-1",
+      "product_id": "p-dining-table-set",
+      "path": "img/placeholders/dining-set-1.svg",
+      "alt": "Dining Table Set (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-dining-table-set-2",
+      "product_id": "p-dining-table-set",
+      "path": "img/placeholders/dining-set-2.svg",
+      "alt": "Dining Table Set (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-dining-chair-1",
+      "product_id": "p-dining-chair",
+      "path": "img/placeholders/dining-chair-1.svg",
+      "alt": "Dining Chair (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-dining-chair-2",
+      "product_id": "p-dining-chair",
+      "path": "img/placeholders/dining-chair-2.svg",
+      "alt": "Dining Chair (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-wardrobe-1",
+      "product_id": "p-wardrobe",
+      "path": "img/placeholders/wardrobe-1.svg",
+      "alt": "Wardrobe (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-wardrobe-2",
+      "product_id": "p-wardrobe",
+      "path": "img/placeholders/wardrobe-2.svg",
+      "alt": "Wardrobe (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-bookshelf-1",
+      "product_id": "p-bookshelf",
+      "path": "img/placeholders/bookshelf-1.svg",
+      "alt": "Bookshelf (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-bookshelf-2",
+      "product_id": "p-bookshelf",
+      "path": "img/placeholders/bookshelf-2.svg",
+      "alt": "Bookshelf (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    },
+    {
+      "id": "i-p-study-table-1",
+      "product_id": "p-study-table",
+      "path": "img/placeholders/study-table-1.svg",
+      "alt": "Study Table (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 0
+    },
+    {
+      "id": "i-p-study-table-2",
+      "product_id": "p-study-table",
+      "path": "img/placeholders/study-table-2.svg",
+      "alt": "Study Table (placeholder photo)",
+      "is_styled": false,
+      "sort_order": 1
+    }
+  ],
+  "reviews": [],
+  "gallery": []
+}

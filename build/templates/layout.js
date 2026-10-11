@@ -16,13 +16,13 @@ export function layout(ctx, { title, description, path, ogImage, noindex = false
 <title>${title}</title>
 <meta name="description" content="${description}">
 <link rel="canonical" href="${canonical}">
-${noindex ? raw('<meta name="robots" content="noindex">') : ''}
+${noindex || ctx.preview ? raw('<meta name="robots" content="noindex">') : ''}
 <meta property="og:site_name" content="Shivam Furniture">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${description}">
 <meta property="og:url" content="${canonical}">
-${ogImage ? html`<meta property="og:image" content="${ogImage}"><meta name="twitter:card" content="summary_large_image">` : ''}
+${ogImage && !ogImage.startsWith('/') ? html`<meta property="og:image" content="${ogImage}"><meta name="twitter:card" content="summary_large_image">` : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
@@ -31,6 +31,7 @@ ${jsonLd.map((o) => raw(`<script type="application/ld+json">${JSON.stringify(o).
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+${ctx.preview ? html`<div class="preview-bar">Preview: sample products and photo placeholders are shown until the real catalogue is added.</div>` : ''}
 <header class="site-header"><div class="wrap head">
   <a class="brand" href="/" aria-label="Shivam Furniture home">${logo(36)}<span class="brand-text"><span class="brand-name" translate="no">SHIVAM</span><span class="brand-sub" translate="no">FURNITURE</span></span></a>
   <nav class="nav" aria-label="Main">${NAV.map(([key, href, label]) => html`<a href="${href}" ${raw(current === key ? 'aria-current="page"' : '')}>${label}</a>`)}</nav>

@@ -1,9 +1,10 @@
 import { createClient } from '@supabase/supabase-js';
 import { readFile } from 'node:fs/promises';
 
-export async function loadData({ fixture = false } = {}) {
-  if (fixture) {
-    return JSON.parse(await readFile(new URL('../fixtures/sample.json', import.meta.url), 'utf8'));
+export async function loadData({ fixture = false, demo = false } = {}) {
+  const local = demo ? '../../data/sample-site.json' : fixture ? 'sample.json' : null;
+  if (local) {
+    return JSON.parse(await readFile(new URL(local.startsWith('..') ? local : `../fixtures/${local}`, import.meta.url), 'utf8'));
   }
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_KEY;

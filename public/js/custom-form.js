@@ -1,4 +1,4 @@
-import { waLink, msgCustomForm } from '/shared/messages.js';
+import { waLink, msgCustomForm } from '../shared/messages.js';
 
 const form = document.querySelector('[data-custom-form]');
 form?.addEventListener('submit', (e) => {

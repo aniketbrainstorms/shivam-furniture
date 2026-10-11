@@ -30,7 +30,7 @@ function loginView() {
 }
 
 const buildStamp = () =>
-  fetch(`/build.json?t=${Date.now()}`, { cache: 'no-store' }).then((r) => r.json()).then((j) => j.builtAt).catch(() => null);
+  fetch(`../build.json?t=${Date.now()}`, { cache: 'no-store' }).then((r) => r.json()).then((j) => j.builtAt).catch(() => null);
 
 function shell() {
   const status = h('span', { class: 'status', 'aria-live': 'polite' });

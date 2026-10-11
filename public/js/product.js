@@ -1,4 +1,4 @@
-import { waLink, msgProduct, msgCustomiseProduct } from '/shared/messages.js';
+import { waLink, msgProduct, msgCustomiseProduct } from '../shared/messages.js';
 
 const root = document.querySelector('[data-product]');
 if (root) {

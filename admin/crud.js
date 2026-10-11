@@ -1,6 +1,6 @@
 import { db, publicUrl } from './db.js';
 import { h, toast, field } from './ui.js';
-import { slugify, RESERVED_SLUGS } from '/shared/slug.js';
+import { slugify, RESERVED_SLUGS } from '../shared/slug.js';
 import { uploadPair, removePair } from './image.js';
 
 /* ---------- generic list editor ---------- */
