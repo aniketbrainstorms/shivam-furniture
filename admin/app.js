@@ -60,7 +60,7 @@ function shell() {
         publish.disabled = false;
       } else if (Date.now() - started > 5 * 60_000) {
         clearInterval(timer);
-        setStatus('The build is taking too long. The previous site is still live. Check the build log in Cloudflare Pages.', 'err');
+        setStatus('The build is taking too long. The previous site is still live. Check the Actions tab on GitHub.', 'err');
         publish.disabled = false;
       }
     }, 5000);
