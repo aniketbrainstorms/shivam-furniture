@@ -42,7 +42,7 @@ function shell() {
     publish.disabled = true;
     setStatus('Starting build…');
     try {
-      const r = await fetch(`${SUPABASE_URL}/functions/v1/publish`, { method: 'POST', headers: { Authorization: `Bearer ${session.access_token}`, apikey: SUPABASE_ANON_KEY } });
+      const r = await fetch(`${SUPABASE_URL}/functions/v1/swift-worker`, { method: 'POST', headers: { Authorization: `Bearer ${session.access_token}`, apikey: SUPABASE_ANON_KEY } });
       const j = await r.json().catch(() => ({}));
       if (!r.ok) throw new Error(j.error || `Publish failed (${r.status})`);
     } catch (e) {
