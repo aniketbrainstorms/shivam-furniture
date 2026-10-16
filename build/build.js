@@ -35,7 +35,8 @@ export async function build({ fixture = false, demo = false, outDir = path.join(
 
   await cp(path.join(root, 'public'), outDir, { recursive: true });
   await cp(path.join(root, 'shared'), path.join(outDir, 'shared'), { recursive: true });
-  if (!demo) {
+  // The admin page is published whenever Supabase is configured (public URL + anon key); the sample preview alone has none.
+  if (!demo || (process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY)) {
     await cp(path.join(root, 'admin'), path.join(outDir, 'admin'), { recursive: true });
     const supa = process.env.SUPABASE_URL ?? ctx.supabaseUrl;
     const anon = process.env.SUPABASE_ANON_KEY ?? 'FIXTURE_ANON_KEY';

@@ -27,6 +27,9 @@ jobs:
       - run: node build/build.js --demo
         env:
           SITE_URL: https://www.shivamfurniturestore.in
+          # public values (safe in the browser); access is protected by login and row-level security
+          SUPABASE_URL: https://zsdnlwjctwtehmxqefbk.supabase.co
+          SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzZG5sd2pjdHd0ZWhteHFlZmJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIxMzg1ODIsImV4cCI6MjEwNzcxNDU4Mn0.i7ZCj2V7gN0Puz6dGNLBH-15xWPZAMuBsbl251VzJ6A
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

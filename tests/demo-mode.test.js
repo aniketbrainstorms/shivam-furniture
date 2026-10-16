@@ -29,3 +29,11 @@ test('every internal link and asset resolves under the base path', async () => {
     }
   }
 });
+test('admin page is included, with config, when Supabase values are provided', async () => {
+  const o2 = await mkdtemp(path.join(tmpdir(), 'demo-admin-'));
+  process.env.SUPABASE_URL = 'https://abc.supabase.co';
+  process.env.SUPABASE_ANON_KEY = 'anon';
+  try { await build({ demo: true, outDir: o2, siteUrl: 'https://x.test' }); } finally { delete process.env.SUPABASE_URL; delete process.env.SUPABASE_ANON_KEY; }
+  assert.match(await readFile(path.join(o2, 'admin', 'config.js'), 'utf8'), /abc\.supabase\.co/);
+  assert.ok(await access(path.join(o2, 'admin', 'index.html')).then(() => true, () => false));
+});
